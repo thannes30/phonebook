@@ -1,0 +1,8 @@
+<h1>Edit Friend's Info</h1>
+  <form action="/friends/<%= @friend.id %>" method="post">
+    <input type="hidden" name="_method" value='put'>
+    <input type="text" value="<%= friend.name %>" name="friend_name">
+    <input type="text" value="<%= friend.state %>" name="friend_state">
+    <input type="text" value="<%= friend.contact %>" name="friend_contact">
+    <input type="submit">
+  </form>

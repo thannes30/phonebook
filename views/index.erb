@@ -1,1 +1,26 @@
 <h1>My Friends</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>State</th>
+      <th>Contact</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @friends.each do |friend| %>
+    <tr>
+      <td>
+        <a href="/friends/<%= friend.id %>">
+          <%= friend.name %>
+        </a>
+      </td>
+      <td><%= friend.name %></td>
+      <td><%= friend.contact %></td>
+    </tr>
+    <% end %>
+  </tbody>
+
+</table>

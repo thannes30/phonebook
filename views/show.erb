@@ -1,0 +1,8 @@
+<h3><%= @friend.name %></h3>
+<h3><%= @friend.state %></h3>
+<h3><%= @friend.contact %></h3>
+
+<form action="/friends/<%= @friend.id %>" method="post">
+  <input type="hidden" name="_method" value="delete">
+  <button type="submit">Delete Friend</button>
+</form>
